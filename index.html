@@ -13,8 +13,10 @@ body {
     font-family: Arial, sans-serif;
     background: #0d0d0d;
     color: white;
-    
-    .menu {
+}
+
+/* MENU */
+.menu {
     position: absolute;
     top: 15px;
     right: 20px;
@@ -42,16 +44,8 @@ body {
 .menu-content a:hover {
     background: #333;
 }
-}
 
 header {
-    <div class="menu" onclick="toggleMenu()">☰</div>
-
-<div class="menu-content" id="menu">
-<a href="/Partner.Hub/impressum.html">Impressum</a>
-<a href="/Partner.Hub/datenschutz.html">Datenschutz</a>
-<a href="https://www.tiktok.com/@partner.hub4" target="_blank">TikTok</a>
-</div>
     background: black;
     padding: 15px;
     text-align: center;
@@ -63,10 +57,6 @@ header {
     padding: 50px 20px;
     text-align: center;
     background: linear-gradient(45deg, orange, red);
-}
-
-.hero h1 {
-    margin-bottom: 10px;
 }
 
 .container {
@@ -123,17 +113,16 @@ header {
 </style>
 </head>
 
-<script>
-function toggleMenu() {
-    var menu = document.getElementById("menu");
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "block";
-    }
-}
-</script>
 <body>
+
+<!-- MENU -->
+<div class="menu" onclick="toggleMenu()">☰</div>
+
+<div class="menu-content" id="menu">
+<a href="/Partner.Hub/impressum.html">Impressum</a>
+<a href="/Partner.Hub/datenschutz.html">Datenschutz</a>
+<a href="https://www.tiktok.com/@partner.hub4" target="_blank">TikTok</a>
+</div>
 
 <header>
 🚗 Auto Gadgets & Tools
@@ -149,7 +138,7 @@ function toggleMenu() {
 <div class="card">
 <img src="IMG_5174.jpeg" alt="OBD2 Diagnosegerät fürs Auto">
 <h3>TOPDON Topscan OBD2 Diagnosegerät</h3>
-<p>Fehlercodes selbst auslesen & Werkstattkosten sparen.</p>
+<p>✔ Spart Werkstattkosten<br>✔ Funktioniert bei fast allen Autos</p>
 <div class="rating">⭐⭐⭐⭐☆ (4.5/5)</div>
 <a href="https://amzn.to/4rPjlDP" class="btn">🔥 Preis auf Amazon prüfen</a>
 </div>
@@ -157,15 +146,15 @@ function toggleMenu() {
 <div class="card">
 <img src="IMG_5177.jpeg" alt="Schraubendreher Set Werkzeug">
 <h3>Brüder Mannesmann Steckschlüssel- und Bitsatz</h3>
-<p>Komplett Set für Haushalt & Auto – perfekt für Einsteiger.</p>
+<p>✔ Perfekt für Anfänger<br>✔ Für Auto & Haushalt</p>
 <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
 <a href="https://amzn.to/4bXueik" class="btn">👉 Jetzt Angebot ansehen</a>
 </div>
 
 <div class="card">
 <img src="IMG_5176.jpeg" alt="Drehmomentschlüssel Werkzeug Auto">
-<h3>Drehmomentschlüssel Auto 1/2 Zoll, 40–210 Nm, TÜV Süd GS geprüfT</h3>
-<p>Unverzichtbar für sicheres Arbeiten an deinem Auto.</p>
+<h3>Drehmomentschlüssel 1/2 Zoll (40–210 Nm)</h3>
+<p>✔ Sicher arbeiten<br>✔ Perfekt für Räderwechsel</p>
 <div class="rating">⭐⭐⭐⭐☆ (4.6/5)</div>
 <a href="https://amzn.to/3NT7k2m" class="btn">💰 Jetzt kaufen</a>
 </div>
@@ -173,7 +162,7 @@ function toggleMenu() {
 <div class="card">
 <img src="IMG_5184.jpeg" alt="Ölfilter Schlüssel Set">
 <h3>TLG Alu Ölfilterkappen Satz</h3>
-<p>Erleichtert jeden Ölwechsel – spart Zeit & Nerven.</p>
+<p>✔ Einfacher Ölwechsel<br>✔ Spart Zeit & Nerven</p>
 <div class="rating">⭐⭐⭐⭐☆ (4.4/5)</div>
 <a href="https://amzn.to/4lLIkH0" class="btn">🛠️ Zum Angebot</a>
 </div>
@@ -185,6 +174,17 @@ function toggleMenu() {
 <a href="/Partner.Hub/impressum.html" style="color: orange;">Impressum</a> | 
 <a href="/Partner.Hub/datenschutz.html" style="color: orange;">Datenschutz</a>
 </div>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
 
 </body>
 </html>
