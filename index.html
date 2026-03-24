@@ -21,6 +21,8 @@ header {background:black;padding:15px;text-align:center;font-size:20px;}
 .card img {width:100%;border-radius:10px;}
 .btn {display:block;margin-top:10px;padding:12px;background:orange;text-align:center;color:white;text-decoration:none;border-radius:5px;font-weight:bold;}
 .footer {text-align:center;padding:20px;font-size:12px;color:#aaa;}
+.search-box {text-align:center;padding:20px;}
+.search-box input {padding:12px;width:80%;max-width:400px;border-radius:5px;border:none;font-size:16px;}
 </style>
 </head>
 
@@ -55,7 +57,6 @@ Du willst dein Auto selbst reparieren und Geld sparen?
 Hier findest du einfache Anleitungen für typische Arbeiten am Auto.
 </p>
 
-<!-- Ölwechsel -->
 <div style="margin-top:20px; background:#1a1a1a; padding:20px; border-radius:10px; display:inline-block; max-width:400px;">
 <h3>Ölwechsel selber machen</h3>
 <p style="font-size:14px; color:#ccc;">
@@ -64,7 +65,6 @@ Spare bis zu 100€ Werkstattkosten – Schritt für Schritt erklärt.
 <a href="oelwechsel-selber-machen.html" class="btn">👉 Anleitung ansehen</a>
 </div>
 
-<!-- Reifenwechsel -->
 <div style="margin-top:20px; background:#1a1a1a; padding:20px; border-radius:10px; display:inline-block; max-width:400px;">
 <h3>Reifen selber wechseln</h3>
 <p style="font-size:14px; color:#ccc;">
@@ -73,6 +73,11 @@ Spare jedes Jahr Geld – einfache Anleitung für deinen Reifenwechsel.
 <a href="reifenwechsel-selber-machen.html" class="btn">👉 Anleitung ansehen</a>
 </div>
 
+</div>
+
+<!-- SUCHFELD -->
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="🔍 Produkt suchen..." onkeyup="searchProducts()">
 </div>
 
 <p style="text-align:center;padding:10px;">
@@ -145,7 +150,22 @@ Mit den richtigen Auto Werkzeugen kannst du viele Reparaturen selbst durchführe
 
 <script>
 function toggleMenu(){var m=document.getElementById("menu");m.style.display=(m.style.display==="block")?"none":"block";}
-function filterProducts(c){document.querySelectorAll(".card").forEach(e=>{e.style.display=(c==="all"||e.dataset.category===c)?"block":"none";});}
+
+function filterProducts(c){
+document.querySelectorAll(".card").forEach(e=>{
+e.style.display=(c==="all"||e.dataset.category===c)?"block":"none";
+});
+}
+
+function searchProducts() {
+let input=document.getElementById("searchInput").value.toLowerCase();
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+let text=card.innerText.toLowerCase();
+card.style.display=text.includes(input)?"block":"none";
+});
+}
 </script>
 
 </body>
