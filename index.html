@@ -128,14 +128,13 @@ header {
 
 <body>
 
-<!-- MENU -->
 <div class="menu" onclick="toggleMenu()">☰</div>
 
 <div class="menu-content" id="menu">
 <a href="#" onclick="filterProducts('all')">Alle Produkte</a>
 <a href="#" onclick="filterProducts('diagnose')">Diagnose Tools</a>
 <a href="#" onclick="filterProducts('werkzeug')">Werkzeuge</a>
-<a href="#" onclick="filterProducts('wartung')">Wartung</a>
+<a href="#" onclick="filterProducts('wartung')">Wartung & Pflege</a>
 <hr>
 <a href="https://www.tiktok.com/@partner.hub4" target="_blank">TikTok</a>
 <a href="impressum.html">Impressum</a>
@@ -151,13 +150,13 @@ header {
 <p>Spare Geld, repariere dein Auto selbst & rüste deine Garage auf 🔧</p>
 </div>
 
-<!-- SEARCH -->
 <div class="search-box">
 <input type="text" id="searchInput" placeholder="🔍 Produkt suchen..." onkeyup="searchProducts()">
 </div>
 
 <div class="container">
 
+<!-- Diagnose -->
 <div class="card" data-category="diagnose">
 <img src="IMG_5174.jpeg">
 <h3>TOPDON Topscan OBD2 Diagnosegerät</h3>
@@ -166,6 +165,7 @@ header {
 <a href="https://amzn.to/4rPjlDP" class="btn">🔥 Preis prüfen</a>
 </div>
 
+<!-- Werkzeug -->
 <div class="card" data-category="werkzeug">
 <img src="IMG_5177.jpeg">
 <h3>Brüder Mannesmann Steckschlüssel-Set</h3>
@@ -182,6 +182,49 @@ header {
 <a href="https://amzn.to/3NT7k2m" class="btn">💰 Jetzt kaufen</a>
 </div>
 
+<!-- NEUE PRODUKTE -->
+
+<div class="card" data-category="werkzeug">
+<img src="IMG_5212.jpg">
+<h3>🔥 Bestseller: Akku Schlagschrauber</h3>
+<p>✔ Reifenwechsel in Sekunden<br>✔ Spart Zeit & Kraft</p>
+<div class="rating">⭐⭐⭐⭐⭐ (4.8/5)</div>
+<a href="https://amzn.to/4bIqP5w" class="btn">⚡ Jetzt ansehen</a>
+</div>
+
+<div class="card" data-category="wartung">
+<img src="IMG_5211.jpg">
+<h3>Auto Poliermaschine</h3>
+<p>✔ Entfernt Kratzer<br>✔ Glanz wie neu</p>
+<div class="rating">⭐⭐⭐⭐☆ (4.6/5)</div>
+<a href="https://amzn.to/4lPVeUk" class="btn">✨ Ergebnis sehen</a>
+</div>
+
+<div class="card" data-category="wartung">
+<img src="IMG_5213.jpg">
+<h3>LED Ambient Licht</h3>
+<p>✔ Stylischer Innenraum<br>✔ TikTok Trend 🔥</p>
+<div class="rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+<a href="https://amzn.to/3NILS02" class="btn">💡 Jetzt upgraden</a>
+</div>
+
+<div class="card" data-category="wartung">
+<img src="IMG_5214.jpg">
+<h3>Auto Reinigungsgel</h3>
+<p>✔ Entfernt Staub aus Lüftung<br>✔ Super satisfying 😍</p>
+<div class="rating">⭐⭐⭐⭐☆ (4.5/5)</div>
+<a href="https://amzn.to/4c0SMH7" class="btn">🧼 Sauber machen</a>
+</div>
+
+<div class="card" data-category="wartung">
+<img src="IMG_5215.jpg">
+<h3>Mikrofaser Tücher</h3>
+<p>✔ Streifenfrei reinigen<br>✔ Innen & Außen</p>
+<div class="rating">⭐⭐⭐⭐⭐ (4.8/5)</div>
+<a href="https://amzn.to/41l5JFI" class="btn">🧽 Jetzt kaufen</a>
+</div>
+
+<!-- Wartung -->
 <div class="card" data-category="wartung">
 <img src="IMG_5184.jpeg">
 <h3>TLG Ölfilterkappen Satz</h3>
@@ -231,4 +274,4 @@ function searchProducts() {
 </script>
 
 </body>
-</html
+</html>
