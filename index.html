@@ -4,78 +4,116 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Auto Werkzeuge & Tools 2026 – Reparieren & Geld sparen</title>
+<title>Auto Werkzeuge 2026 – Spare Werkstattkosten</title>
 
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-
-<meta name="description" content="Auto selbst reparieren und Werkstattkosten sparen. Die besten Auto Werkzeuge 2026 für DIY Reparaturen.">
+<link rel="icon" href="favicon.ico">
 
 <style>
-body {margin:0;font-family:Arial;background:#0d0d0d;color:white;}
+body {
+  margin:0;
+  font-family:Arial;
+  background:#0d0d0d;
+  color:white;
+}
 
 /* HEADER */
 .header {
-  position: sticky;
-  top: 0;
-  background: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 25px;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  position:sticky;
+  top:0;
+  background:#000;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 25px;
+  z-index:1000;
 }
 
-.logo img {width:150px;}
+.logo img {width:140px;}
 
-.menu {
-  font-size:30px;
-  cursor:pointer;
+.menu {font-size:28px;cursor:pointer;}
+
+/* HERO */
+.hero {
+  text-align:center;
+  padding:60px 20px;
+  background:linear-gradient(45deg,#ff6600,#ff0000);
 }
 
-/* MENU */
-.menu-content {
-  display:none;
-  position:fixed;
-  top:70px;
-  right:20px;
+.hero h1 {
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.hero p {
+  font-size:16px;
+}
+
+/* TRUST */
+.trust {
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+  color:#ccc;
+}
+
+/* CARDS */
+.container {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.card {
   background:#1a1a1a;
   padding:15px;
   border-radius:10px;
-  min-width:200px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.5);
-  z-index:2000;
+  transition:0.3s;
 }
 
-.menu-content a {
+.card:hover {
+  transform:scale(1.03);
+}
+
+.card img {
+  width:100%;
+  border-radius:10px;
+}
+
+/* BUTTON */
+.btn {
   display:block;
+  margin-top:10px;
+  padding:12px;
+  background:#ff6600;
+  text-align:center;
   color:white;
   text-decoration:none;
-  padding:10px;
+  border-radius:5px;
+  font-weight:bold;
 }
 
-.menu-content a:hover {background:#333;}
-
-/* TITLE FIX */
-.main-title {
+/* SEARCH */
+.search-box {
   text-align:center;
-  padding:15px;
-  font-size:20px;
+  padding:20px;
 }
 
-.hero {padding:50px;text-align:center;background:linear-gradient(45deg,orange,red);}
-.container {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:20px;}
-.card {background:#1a1a1a;padding:15px;border-radius:10px;}
-.card img {width:100%;border-radius:10px;}
-.btn {display:block;margin-top:10px;padding:12px;background:orange;text-align:center;color:white;text-decoration:none;border-radius:5px;font-weight:bold;}
-.footer {text-align:center;padding:20px;font-size:12px;color:#aaa;}
-.search-box {text-align:center;padding:20px;}
-.search-box input {padding:12px;width:80%;max-width:400px;border-radius:5px;border:none;font-size:16px;}
-.trust {text-align:center;padding:10px;color:#aaa;font-size:14px;}
-.tag {font-size:12px;margin:5px 0;color:orange;}
-.feature {font-size:12px;color:#ccc;}
+.search-box input {
+  padding:12px;
+  width:80%;
+  max-width:400px;
+  border-radius:5px;
+  border:none;
+}
+
+/* FOOTER */
+.footer {
+  text-align:center;
+  padding:20px;
+  font-size:12px;
+  color:#aaa;
+}
 </style>
 </head>
 
@@ -83,68 +121,99 @@ body {margin:0;font-family:Arial;background:#0d0d0d;color:white;}
 
 <header class="header">
   <div class="logo">
-    <img src="logo.png" alt="PartnerHubCar Logo">
+    <img src="logo.png">
   </div>
-
-  <div class="menu" onclick="toggleMenu(event)">☰</div>
 </header>
 
-<div class="menu-content" id="menu">
-<a href="#" onclick="filterProducts('all')">Alle Produkte</a>
-<a href="#" onclick="filterProducts('diagnose')">Diagnose</a>
-<a href="#" onclick="filterProducts('werkzeug')">Werkzeuge</a>
-<a href="#" onclick="filterProducts('pflege')">Pflege & Wartung</a>
-
-<hr>
-
-<a href="https://www.tiktok.com/@partner.hub4" target="_blank">📱 TikTok folgen</a>
-
-<a href="impressum.html">Impressum</a>
-<a href="datenschutz.html">Datenschutz</a>
+<div class="hero">
+<h1>🚗 Spare bis zu 100€ bei jeder Reparatur</h1>
+<p>Die besten Auto Tools 2026 für Anfänger & Profis</p>
 </div>
-
-<!-- FIXED TITLE -->
-<div class="main-title">🚗 Auto Tools & Werkzeuge</div>
 
 <div class="trust">
-💰 Spare jedes Jahr bis zu 100€ durch DIY Reparaturen
-</div>
-
-<div class="hero">
-<h1>Auto Werkzeuge 2026 – Spare Werkstattkosten</h1>
-<p>Repariere dein Auto selbst & spare Geld 🔧</p>
-</div>
-
-<div style="padding:30px; text-align:center;">
-<h2 style="color:orange;">🔧 Tipps & Anleitungen</h2>
-<p style="max-width:600px; margin:auto;">
-Auto selbst reparieren statt Werkstatt bezahlen. Hier findest du einfache Anleitungen.
-</p>
-
-<div style="margin-top:20px; background:#1a1a1a; padding:20px; border-radius:10px; display:inline-block; max-width:400px;">
-<h3>Ölwechsel selber machen</h3>
-<p>Spare bis zu 100€ Werkstattkosten</p>
-<a href="oelwechsel-selber-machen.html" class="btn">🔥 Anleitung ansehen</a>
-</div>
-
-<div style="margin-top:20px; background:#1a1a1a; padding:20px; border-radius:10px; display:inline-block; max-width:400px;">
-<h3>Reifen selber wechseln</h3>
-<p>Spare jedes Jahr Geld</p>
-<a href="reifenwechsel-selber-machen.html" class="btn">🔥 Anleitung ansehen</a>
-</div>
-
+⭐⭐⭐⭐⭐ Über 1000 zufriedene Nutzer sparen Geld mit diesen Tools
 </div>
 
 <div class="search-box">
-<input type="text" id="searchInput" placeholder="🔍 Suche nach Auto Werkzeug..." onkeyup="searchProducts()">
+<input type="text" id="searchInput" placeholder="🔍 Suche Werkzeug..." onkeyup="searchProducts()">
 </div>
 
-<p style="text-align:center;padding:10px;">
-Spare jedes Jahr Hunderte Euro, indem du dein Auto einfach selbst reparierst.
-</p>
-
 <div class="container">
-<!-- deine Cards bleiben gleich -->
+
+<div class="card" data-category="diagnose">
+<img src="obd2-diagnosegeraet-auto.JPG">
+<h3>OBD2 Diagnosegerät</h3>
+<p class="tag">⭐⭐⭐⭐⭐ 4.8 Bewertung</p>
+<p class="feature">✅ Fehler sofort erkennen</p>
+<a href="https://amzn.to/4rPjlDP" class="btn">🔥 Jetzt Geld sparen</a>
+</div>
+
+<div class="card" data-category="werkzeug">
+<img src="steckschluessel-set-auto.jpg">
+<h3>Steckschlüssel Set</h3>
+<p class="tag">⚡ Sehr beliebt</p>
+<p class="feature">✅ Für Anfänger</p>
+<a href="https://amzn.to/4bXueik" class="btn">🔥 Jetzt Geld sparen</a>
+</div>
+
+<div class="card" data-category="werkzeug">
+<img src="drehmomentschluessel-auto.jpg">
+<h3>Drehmomentschlüssel</h3>
+<p class="tag">🔥 Fast ausverkauft</p>
+<p class="feature">✅ Sicher arbeiten</p>
+<p style="font-size:12px;">👉 Anleitung: <a href="reifenwechsel-selber-machen.html">Reifen wechseln</a></p>
+<a href="https://amzn.to/3NT7k2m" class="btn">🔥 Jetzt Geld sparen</a>
+</div>
+
+<div class="card" data-category="werkzeug">
+<img src="oelfilterkappen-set-auto.jpg">
+<h3>Ölfilterkappen Set</h3>
+<p class="tag">⭐⭐⭐⭐⭐ Top bewertet</p>
+<p class="feature">✅ Einfach zu bedienen</p>
+<p style="font-size:12px;">👉 Anleitung: <a href="oelwechsel-selber-machen.html">Ölwechsel</a></p>
+<a href="https://amzn.to/4lLIkH0" class="btn">🔥 Jetzt Geld sparen</a>
+</div>
+
+<div class="card" data-category="werkzeug">
+<img src="oel-auffangbehaelter-auto.jpg">
+<h3>Öl Auffangbehälter</h3>
+<p class="tag">💰 Spart Zeit</p>
+<p class="feature">✅ Kein Chaos</p>
+<a href="https://amzn.to/4dDT8om" class="btn">🔥 Jetzt Geld sparen</a>
+</div>
+
+<div class="card" data-category="pflege">
+<img src="mikrofaser-auto-tuch-set.jpg">
+<h3>Mikrofaser Tücher</h3>
+<p class="tag">⚡ Sehr gefragt</p>
+<p class="feature">✅ Kratzerfrei</p>
+<a href="https://amzn.to/40Q4oqo" class="btn">🔥 Jetzt Geld sparen</a>
+</div>
+
+<div class="card" data-category="pflege">
+<img src="auto-innenraum-reinigungsgel-lueftung.jpg">
+<h3>Reinigungsgel</h3>
+<p class="tag">🔥 Trend Produkt</p>
+<p class="feature">✅ Perfekt für Lüftung</p>
+<a href="https://amzn.to/40VbwSe" class="btn">🔥 Jetzt Geld sparen</a>
+</div>
+
+<div class="card" data-category="pflege">
+<img src="auto-poliermaschine-set.jpg">
+<h3>Poliermaschine</h3>
+<p class="tag">⭐⭐⭐⭐⭐ 4.7 Bewertung</p>
+<p class="feature">✅ Glanz wie neu</p>
+<a href="https://amzn.to/4uNwBMb" class="btn">🔥 Jetzt Geld sparen</a>
+</div>
+
+<div class="card" data-category="pflege">
+<img src="auto-led-ambientebeleuchtung-innenraum.jpg">
+<h3>Ambientebeleuchtung</h3>
+<p class="tag">🔥 Sehr beliebt</p>
+<p class="feature">✅ App Steuerung</p>
+<a href="https://amzn.to/4bv7p5A" class="btn">🔥 Jetzt Geld sparen</a>
+</div>
+
 </div>
 
 <div class="footer">
@@ -154,26 +223,6 @@ Spare jedes Jahr Hunderte Euro, indem du dein Auto einfach selbst reparierst.
 </div>
 
 <script>
-function toggleMenu(e){
-  e.stopPropagation();
-  var m=document.getElementById("menu");
-  m.style.display=(m.style.display==="block")?"none":"block";
-}
-
-/* CLICK OUTSIDE = CLOSE MENU */
-document.addEventListener("click", function(event) {
-  var menu = document.getElementById("menu");
-  if (!menu.contains(event.target) && !event.target.classList.contains("menu")) {
-    menu.style.display = "none";
-  }
-});
-
-function filterProducts(c){
-document.querySelectorAll(".card").forEach(e=>{
-e.style.display=(c==="all"||e.dataset.category===c)?"block":"none";
-});
-}
-
 function searchProducts() {
 let input=document.getElementById("searchInput").value.toLowerCase();
 let cards=document.querySelectorAll(".card");
