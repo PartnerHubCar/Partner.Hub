@@ -30,7 +30,10 @@ body {
 
 .logo img {width:140px;}
 
-.menu {font-size:28px;cursor:pointer;}
+.menu {
+  font-size:30px;
+  cursor:pointer;
+}
 
 /* MENU */
 .menu-content {
@@ -52,7 +55,9 @@ body {
   padding:10px;
 }
 
-.menu-content a:hover {background:#333;}
+.menu-content a:hover {
+  background:#333;
+}
 
 /* HERO */
 .hero {
@@ -61,11 +66,9 @@ body {
   background:linear-gradient(45deg,#ff6600,#ff0000);
 }
 
-/* TRUST */
 .trust {
   text-align:center;
   padding:15px;
-  font-size:14px;
   color:#ccc;
 }
 
@@ -81,12 +84,12 @@ body {
   background:#1a1a1a;
   padding:15px;
   border-radius:10px;
-  transition:0.3s;
 }
 
-.card:hover {transform:scale(1.03);}
-
-.card img {width:100%;border-radius:10px;}
+.card img {
+  width:100%;
+  border-radius:10px;
+}
 
 .btn {
   display:block;
@@ -100,7 +103,6 @@ body {
   font-weight:bold;
 }
 
-/* SEARCH */
 .search-box {
   text-align:center;
   padding:20px;
@@ -114,7 +116,6 @@ body {
   border:none;
 }
 
-/* FOOTER */
 .footer {
   text-align:center;
   padding:20px;
@@ -131,11 +132,10 @@ body {
     <img src="logo.png">
   </div>
 
-  <!-- MENU BUTTON -->
-  <div class="menu" onclick="toggleMenu(event)">☰</div>
+  <div class="menu" onclick="toggleMenu()">☰</div>
 </header>
 
-<!-- MENU DROPDOWN -->
+<!-- MENU -->
 <div class="menu-content" id="menu">
 <a href="#">Alle Produkte</a>
 <a href="#">Diagnose</a>
@@ -151,11 +151,11 @@ body {
 
 <div class="hero">
 <h1>🚗 Spare bis zu 100€ bei jeder Reparatur</h1>
-<p>Die besten Auto Tools 2026 für Anfänger & Profis</p>
+<p>Die besten Auto Tools 2026</p>
 </div>
 
 <div class="trust">
-⭐⭐⭐⭐⭐ Über 1000 zufriedene Nutzer sparen Geld mit diesen Tools
+⭐⭐⭐⭐⭐ Über 1000 Nutzer sparen Geld
 </div>
 
 <div class="search-box">
@@ -164,89 +164,64 @@ body {
 
 <div class="container">
 
-<div class="card" data-category="diagnose">
+<div class="card">
 <img src="obd2-diagnosegeraet-auto.JPG">
 <h3>OBD2 Diagnosegerät</h3>
-<p class="tag">⭐⭐⭐⭐⭐ 4.8 Bewertung</p>
-<p class="feature">✅ Fehler sofort erkennen</p>
-<a href="https://amzn.to/4rPjlDP" class="btn">🔥 Jetzt Geld sparen</a>
+<a href="https://amzn.to/4rPjlDP" class="btn">🔥 Jetzt sparen</a>
 </div>
 
-<div class="card" data-category="werkzeug">
+<div class="card">
 <img src="steckschluessel-set-auto.jpg">
 <h3>Steckschlüssel Set</h3>
-<p class="tag">⚡ Sehr beliebt</p>
-<p class="feature">✅ Für Anfänger</p>
-<a href="https://amzn.to/4bXueik" class="btn">🔥 Jetzt Geld sparen</a>
+<a href="https://amzn.to/4bXueik" class="btn">🔥 Jetzt sparen</a>
 </div>
 
-<div class="card" data-category="werkzeug">
+<div class="card">
 <img src="drehmomentschluessel-auto.jpg">
 <h3>Drehmomentschlüssel</h3>
-<p class="tag">🔥 Fast ausverkauft</p>
-<p class="feature">✅ Sicher arbeiten</p>
-<p style="font-size:12px;">👉 Anleitung: <a href="reifenwechsel-selber-machen.html">Reifen wechseln</a></p>
-<a href="https://amzn.to/3NT7k2m" class="btn">🔥 Jetzt Geld sparen</a>
+<a href="https://amzn.to/3NT7k2m" class="btn">🔥 Jetzt sparen</a>
 </div>
 
-<div class="card" data-category="werkzeug">
+<div class="card">
 <img src="oelfilterkappen-set-auto.jpg">
 <h3>Ölfilterkappen Set</h3>
-<p class="tag">⭐⭐⭐⭐⭐ Top bewertet</p>
-<p class="feature">✅ Einfach zu bedienen</p>
-<p style="font-size:12px;">👉 Anleitung: <a href="oelwechsel-selber-machen.html">Ölwechsel</a></p>
-<a href="https://amzn.to/4lLIkH0" class="btn">🔥 Jetzt Geld sparen</a>
+<a href="https://amzn.to/4lLIkH0" class="btn">🔥 Jetzt sparen</a>
 </div>
 
-<div class="card" data-category="werkzeug">
+<div class="card">
 <img src="oel-auffangbehaelter-auto.jpg">
 <h3>Öl Auffangbehälter</h3>
-<p class="tag">💰 Spart Zeit</p>
-<p class="feature">✅ Kein Chaos</p>
-<a href="https://amzn.to/4dDT8om" class="btn">🔥 Jetzt Geld sparen</a>
-</div>
-
-<div class="card" data-category="pflege">
-<img src="mikrofaser-auto-tuch-set.jpg">
-<h3>Mikrofaser Tücher</h3>
-<p class="tag">⚡ Sehr gefragt</p>
-<p class="feature">✅ Kratzerfrei</p>
-<a href="https://amzn.to/40Q4oqo" class="btn">🔥 Jetzt Geld sparen</a>
-</div>
-
-<div class="card" data-category="pflege">
-<img src="auto-innenraum-reinigungsgel-lueftung.jpg">
-<h3>Reinigungsgel</h3>
-<p class="tag">🔥 Trend Produkt</p>
-<p class="feature">✅ Perfekt für Lüftung</p>
-<a href="https://amzn.to/40VbwSe" class="btn">🔥 Jetzt Geld sparen</a>
-</div>
-
-<div class="card" data-category="pflege">
-<img src="auto-poliermaschine-set.jpg">
-<h3>Poliermaschine</h3>
-<p class="tag">⭐⭐⭐⭐⭐ 4.7 Bewertung</p>
-<p class="feature">✅ Glanz wie neu</p>
-<a href="https://amzn.to/4uNwBMb" class="btn">🔥 Jetzt Geld sparen</a>
-</div>
-
-<div class="card" data-category="pflege">
-<img src="auto-led-ambientebeleuchtung-innenraum.jpg">
-<h3>Ambientebeleuchtung</h3>
-<p class="tag">🔥 Sehr beliebt</p>
-<p class="feature">✅ App Steuerung</p>
-<a href="https://amzn.to/4bv7p5A" class="btn">🔥 Jetzt Geld sparen</a>
+<a href="https://amzn.to/4dDT8om" class="btn">🔥 Jetzt sparen</a>
 </div>
 
 </div>
 
 <div class="footer">
-<p>*Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.</p>
 <a href="impressum.html">Impressum</a> |
 <a href="datenschutz.html">Datenschutz</a>
 </div>
 
 <script>
+function toggleMenu(){
+  var menu = document.getElementById("menu");
+
+  if(menu.style.display === "block"){
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+
+/* CLICK OUTSIDE CLOSE */
+document.addEventListener("click", function(e) {
+  var menu = document.getElementById("menu");
+  var button = document.querySelector(".menu");
+
+  if (!menu.contains(e.target) && !button.contains(e.target)) {
+    menu.style.display = "none";
+  }
+});
+
 function searchProducts() {
 let input=document.getElementById("searchInput").value.toLowerCase();
 let cards=document.querySelectorAll(".card");
